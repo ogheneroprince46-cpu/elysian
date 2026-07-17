@@ -1,0 +1,1533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  text-size-adjust: 100%;
+  background-color: black;
+  color: #a89a8c;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 20px 30px;
+}
+/* HEADER SECTION */
+.header {
+  background-color: black;
+  z-index: 10;
+  padding: 0rem 0rem;
+  border-bottom: 1px solid black;
+  position: fixed;
+}
+
+.phn {
+  /* width: 12rem;
+  height: 5rem; */
+}
+.dsk {
+  width: 9rem;
+  height: 10rem;
+}
+
+.sidebar i {
+  color: #f19e05;
+  display: flex;
+  font-size: 25px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 2rem;
+  padding-top: 0.6rem;
+}
+
+.nav-links {
+  padding-top: 1.4rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #c9a96e;
+  padding: 0.5rem 0.9rem;
+  font-size: 17px;
+  /* gap: 5rem; */
+  /* flex-shrink: 0; */
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+.nav-links a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+}
+.nav-links {
+  display: none;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+}
+.header .content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* gap: 13rem; */
+}
+
+.hero {
+  position: relative;
+}
+.hero .content {
+  color: white;
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-top: 15.37rem;
+  padding-bottom: 10.125rem;
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-bg img {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 1rem;
+}
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #fcf2e0;
+  font-weight: 900;
+  padding: 0.5rem 0rem;
+}
+.hero h5 {
+  color: #efc578;
+  font-weight: 700;
+}
+.hero .content a {
+  margin: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.hero .content .rst {
+  background-color: #d79416;
+  color: white;
+}
+.hero .content .viw {
+  background-color: transparent;
+  border: 1px solid #c9a96e;
+  /* color: #f7a307; */
+  color: white;
+}
+.hero .content a:hover {
+  background-color: #c4aa7c;
+  color: black;
+}
+
+/* ESSENCE SECTION */
+.essence {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.essence .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.essence .first-column {
+  flex: 1;
+}
+.essence .second-column {
+  flex: 1;
+}
+.essence .side-img img {
+  width: 100%;
+  height: 700px;
+}
+.essence .first-column h2 {
+  padding: 1rem 0rem;
+  font-size: 2.2rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #d79416;
+}
+.essence .first-column h3 {
+  color: white;
+  padding: 0.5rem 0rem;
+}
+.essence .first-column h4 {
+  padding: 1rem 0rem;
+  line-height: 1.9;
+}
+.essence a {
+  margin: 2rem 0rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #d79416;
+  color: white;
+}
+.essence a:hover {
+  background-color: #c4aa7c;
+  color: white;
+}
+/* STAT SECTION */
+.stat {
+  border: 2px solid #28231f;
+  padding: 2.5rem 0rem;
+}
+.stat-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.stat h3 {
+  font-size: 2.2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.stat p {
+  font-size: 0.9rem;
+}
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.menu-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 1rem 0rem;
+}
+.menu-title h5 {
+  color: #d79416;
+  font-size: 1rem;
+}
+.menu-title h4 {
+  color: #c4aa7c;
+  font-size: 0.9rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+}
+.menu-title h3 {
+  color: white;
+  font-size: 2.5em;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+}
+.menu-food {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.menu-food img {
+  padding: 0.5rem 0.5rem;
+  width: 17rem;
+  height: 17rem;
+}
+.menu .content .etf {
+  background-color: transparent;
+  border: 1px solid #c9a96e;
+  color: #f7a307;
+  display: inline-block;
+  margin: 2rem 0rem;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.menu .content .etf:hover {
+  background-color: #c4aa7c;
+  color: black;
+}
+.menu .menu-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* SPACE SECTION */
+.space {
+  padding: 2rem 0rem;
+}
+.space-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 1rem 0rem;
+}
+.space-title h5 {
+  color: #d79416;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.space-title h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+}
+.space-box img {
+  padding: 0.9rem 0.5rem;
+  width: 30rem;
+  height: 30rem;
+}
+.space-box {
+  position: relative;
+}
+.space-info {
+  z-index: 2;
+  left: 0.5rem;
+  bottom: 0.7rem;
+  border-radius: 5px;
+  line-height: 1.4;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.space-info p {
+  color: #c4aa7c;
+}
+.space-card {
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.space .content .eas {
+  background-color: transparent;
+  color: #f7a307;
+  display: inline-block;
+  margin: 2rem 0rem;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.space-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* CHEF SECTION */
+.chef {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.chef .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.chef .second-column {
+  flex: 1;
+  padding-top: 3rem;
+}
+.chef .first-column {
+  flex: 1;
+}
+.chef .side-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.chef .second-column h3 {
+  padding: 0.5rem 0rem;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+}
+.chef .second-column h5 {
+  color: #efc578;
+  letter-spacing: 0.2rem;
+}
+.chef .second-column h4 {
+  line-height: 1.8;
+  padding: 2rem 0rem;
+}
+.chef .second-column p {
+  color: #f19e05;
+}
+/* TABLE SECTION */
+.table {
+  position: relative;
+}
+
+.table .content {
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.table-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.table .content h3 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+  line-height: 1.9;
+}
+.table .content p {
+  color: #c4aa7c;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+}
+.table-button a {
+  margin: 2rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+  background-color: #efc578;
+}
+.table-button a:hover {
+  background-color: #d79416;
+  color: white;
+}
+
+/* FOOTER SECTION */
+.footer {
+  padding: 3rem 0rem;
+}
+.footer-box a {
+  list-style: none;
+  text-decoration: none;
+  color: #a89a8c;
+  line-height: 1.9;
+}
+.footer-box a:hover {
+  color: white;
+}
+.footer-box {
+  padding: 1rem 0rem;
+  list-style: none;
+  display: grid;
+  /* grid-template-columns:; */
+}
+.footer-box ul {
+  list-style: none;
+}
+.footer-box h3 {
+  color: #f19e05;
+}
+.footer-bottom {
+  padding: 1rem 0rem;
+}
+.footer-media {
+  display: flex;
+  gap: 1rem;
+}
+.footer-social {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+.footer-social i {
+  color: white;
+}
+.footer-bottom {
+  display: flex;
+  gap: 2rem;
+}
+
+/* THE SPACE SECTION */
+
+/* TABLE SECTION */
+.atmosphere {
+  position: relative;
+}
+
+.atmosphere .content {
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+.atmosphere-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.atmosphere .content h2 {
+  color: aqua;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+  line-height: 1.9;
+}
+.atmosphere .content p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* DINING SECTION */
+
+.dining {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.dining .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.dining .first-column {
+  flex: 1;
+}
+.dining .second-column {
+  flex: 1;
+}
+
+.dining-side-img img {
+  width: 100%;
+  height: 600px;
+}
+.dining-stat {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.dining .first-column .dining-stat h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.3rem;
+  color: #d79416;
+}
+.first-column .dining-stat p {
+  color: white;
+  font-weight: 700;
+}
+.dining .first-column h2 {
+  padding: 1rem 0rem;
+  font-size: 2.1rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #d79416;
+}
+.dining .first-column h3 {
+  color: white;
+  padding: 0.5rem 0rem;
+  letter-spacing: 0.1rem;
+}
+.dining .first-column h4 {
+  padding: 1rem 0rem;
+  line-height: 1.9;
+}
+/* DESIGN */
+.design {
+  padding: 2rem 0rem;
+}
+.design-box img {
+  padding: 0.9rem 0.5rem;
+  width: 20rem;
+  height: 20rem;
+}
+.design-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* THE BAR */
+.bar {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.bar .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.bar .second-column {
+  flex: 1;
+  padding-top: 3rem;
+}
+.bar .first-column {
+  flex: 1;
+}
+.bar .side-img img {
+  width: 100%;
+  height: 500px;
+}
+
+.bar .second-column h3 {
+  padding: 0.5rem 0rem;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+}
+.bar .second-column h5 {
+  color: #efc578;
+  letter-spacing: 0.2rem;
+}
+.bar .second-column h4 {
+  line-height: 1.8;
+  padding: 0.8rem 0rem;
+}
+
+/* WINE SECTION */
+.wine {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.wine .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.wine .first-column {
+  flex: 1;
+  padding-top: 3rem;
+}
+.wine .second-column {
+  flex: 1;
+}
+.wine-side-img img {
+  width: 100%;
+  height: 500px;
+}
+.wine .first-column h3 {
+  padding: 0.5rem 0rem;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+}
+.wine .first-column h5 {
+  color: #efc578;
+  letter-spacing: 0.2rem;
+}
+.wine .first-column h4 {
+  line-height: 1.8;
+  padding: 0.8rem 0rem;
+}
+
+/* EXCLUSIVE  SECTION*/
+.exclusive {
+  padding: 2rem 0rem;
+}
+.exclusive-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 1rem 0rem;
+}
+.exclusive-title h5 {
+  font-size: 0.9rem;
+  color: #efc578;
+  letter-spacing: 0.2rem;
+}
+.exclusive-title h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+}
+.exclusive-box img {
+  padding: 0.9rem 0.5rem;
+  width: 30rem;
+  height: 30rem;
+}
+.exclusive-box {
+  position: relative;
+}
+.exclusive-info {
+  z-index: 2;
+  left: 0.5rem;
+  bottom: 0.7rem;
+  border-radius: 5px;
+  line-height: 1.4;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  text-align: center;
+}
+.exclusive-info p {
+  color: #c4aa7c;
+}
+
+/* JOURNEY SECTION */
+.journey {
+  padding: 2rem 0rem;
+}
+.journey-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 1rem 0rem;
+}
+.journey-title h5 {
+  font-size: 0.9rem;
+  color: #efc578;
+  letter-spacing: 0.2rem;
+}
+.journey-title h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.journey-box img {
+  padding: 0.9rem 0.7rem;
+  width: 100%;
+  height: 500px;
+}
+.journey-info {
+  z-index: 2;
+  left: 0.5rem;
+  bottom: 0.7rem;
+  border-radius: 5px;
+  line-height: 1.4;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.journey-box {
+  position: relative;
+}
+.journey-info p {
+  color: white;
+  font-weight: 600;
+}
+.space-card {
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* IN-PRESON SECTION */
+.in-person {
+  padding: 2rem 0rem;
+  border: 2px solid #28231f;
+}
+.in-person .content {
+  align-items: center;
+  text-align: center;
+}
+.in-person h3 {
+  color: #d79416;
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.in-person .content a {
+  margin: 2rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #efc578;
+  letter-spacing: 0.1rem;
+}
+.in-person .content a:hover {
+  background-color: gray;
+  color: black;
+}
+
+/* ABOUT US SECTION SUBPAGE */
+
+/* AB SECTION */
+.abt {
+  position: relative;
+}
+
+.abt .content {
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-top: 10rem;
+  padding-bottom: 9rem;
+}
+.abt-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.abt .content h2 {
+  color: aqua;
+  font-size: 3.5rem;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.9;
+}
+
+.abt .content p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.abt .content h5 {
+  color: #efc578;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.4rem;
+}
+
+/* WELCOME SECTION */
+.welcome {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.welcome .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.welcome .second-column {
+  flex: 1;
+  padding-top: 3rem;
+}
+.welcome .first-column {
+  flex: 1;
+}
+.welcome .first-column h3 {
+  padding: 0.5rem 0rem;
+  font-size: 2.2rem;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+}
+.welcome .second-column h3 {
+  padding: 0.5rem 0rem;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+}
+.welcome .second-column,
+.first-column h4 {
+  line-height: 1.8;
+  padding: 0.8rem 0rem;
+}
+
+/* MEMBERS SECTION */
+.members {
+  padding: 2rem 0rem;
+}
+.members-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 1rem 0rem;
+}
+.members-title h5 {
+  color: #d79416;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.members-title h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+}
+.members-box img {
+  padding: 0.9rem 0.5rem;
+  width: 30rem;
+  height: 30rem;
+}
+.members-box {
+  position: relative;
+}
+.members-info {
+  z-index: 2;
+  left: 0.5rem;
+  bottom: 0.7rem;
+  border-radius: 5px;
+  line-height: 1.4;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.members-info p {
+  color: #c4aa7c;
+}
+.members-card {
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* VALUES SECTION */
+.values {
+  padding: 3rem 0rem;
+}
+.values-card {
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem 0rem;
+}
+.values-box {
+  padding: 2rem 0rem;
+}
+.values-box.bnd {
+  border-left: 1px solid rgb(51, 51, 49);
+  border-right: 1px solid rgb(51, 51, 49);
+}
+.values-box h5 {
+  color: #d79416;
+  letter-spacing: 0.5;
+  font-size: 0.8rem;
+  padding: 0.3rem 0rem;
+}
+.values-box h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 0.4rem 0rem;
+  color: white;
+}
+.values-box h4 {
+  line-height: 1.5rem;
+}
+
+/* THE CHOOSE SECTION */
+.choose {
+  padding: 2rem 0rem;
+  height: 100%;
+}
+.choose .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.choose .second-column {
+  flex: 1;
+  padding-top: 3rem;
+}
+.choose .first-column {
+  flex: 1;
+}
+.choose .side-img img {
+  width: 100%;
+  height: 500px;
+}
+.choose .second-column h3 {
+  padding: 0.5rem 0rem;
+  font-size: 2.2rem;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+}
+.choose .second-column h4 {
+  line-height: 1.5;
+  padding: 0.3rem 0rem;
+}
+
+/* RESERVATION SECTION SUBPAGE */
+
+/* RSVHERO SECTION */
+.rsvhero {
+  position: relative;
+}
+
+.rsvhero .content {
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-top: 10rem;
+  padding-bottom: 9rem;
+}
+.rsvhero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.rsvhero .content h2 {
+  color: aqua;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.9;
+}
+.rsvhero .content p {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.rsvhero .content h5 {
+  color: #f7a307;
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+}
+/* BOOKINGS SECTION */
+.bookings {
+  padding: 2rem 0rem;
+  border-color: blue;
+  height: 100%;
+}
+.bookings .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+}
+.bookings .second-column {
+  flex: 1;
+  padding-top: 3rem;
+}
+.bookings .first-column {
+  /* border: 1px solid #57493e; */
+  padding: 0rem 1rem;
+}
+
+.bookings-form {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  gap: 1rem;
+}
+.bookings-form h3 {
+  color: #c68611;
+}
+::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+.bookings .first-column h2 {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.bookings .first-column p {
+  color: aqua;
+  font-weight: bold;
+}
+.bookings-button a {
+  text-decoration: none;
+  color: white;
+  background-color: #f19e05;
+  border: 1px solid #c4aa7c;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.bookings-button a:hover {
+  background-color: #c9a96e;
+}
+.bookings .content form input {
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.4rem;
+}
+select {
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.4rem;
+}
+.bookings .lek {
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.bookings .content form textarea {
+  width: 100%;
+  height: 15rem;
+  padding-inline: 15px;
+  padding-block: 10px;
+  resize: none;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+.bookings-card {
+  border: 1px solid #57493e;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+.bookings-card a{
+  text-decoration: none;
+    color: #a89a8c;
+}
+.bookings .second-column h3 {
+  color: aqua;
+  padding: 0.7rem 0rem;
+  font-size: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.bookings .second-column h4 {
+  line-height: 1.5;
+}
+/* THANKS SECTION */
+.thanks {
+  padding: 2rem 0rem;
+  border: 2px solid #28231f;
+  /* background-color: rgb(12, 12, 12); */
+}
+.thanks .content {
+  text-align: center;
+}
+.thanks .content h4 {
+  color: aqua;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+}
+
+/* MENU SECTION SUBPAGE */
+
+/*MUHERO SECTION */
+.muhero {
+  position: relative;
+}
+
+.muhero .content {
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  padding-top: 10rem;
+  padding-bottom: 9rem;
+}
+.muhero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.muhero .content h2 {
+  color: aqua;
+  font-size: 3.5rem;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.9;
+}
+
+.muhero .content p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.muhero .content h5 {
+  color: #f7a307;
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+}
+
+.menu-buttons {
+  gap: 2rem;
+  /* width: 5rem; */
+}
+.menu-buttons button {
+  color: white;
+  background-color: #f7a307;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  display: flex;
+}
+.menu-buttons button.active {
+  background-color: white;
+  color: #f7a307;
+}
+.menu-buttons .container {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+.menu-box img {
+  padding: 0.9rem 0.5rem;
+  width: 20rem;
+  height: 20rem;
+}
+.menu-box {
+  position: relative;
+}
+.menu-info {
+  z-index: 2;
+  left: 0.5rem;
+  bottom: 0.7rem;
+  border-radius: 5px;
+  line-height: 1.1;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.menu-card p {
+  color: #c4aa7c;
+}
+.menu-card {
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.pldmenu {
+  display: grid;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #c5a059;
+  cursor: pointer;
+}
+
+/* MUINFO SECTION */
+.menuinfo {
+  padding: 2rem 0rem;
+}
+.menuinfo .content {
+  align-items: center;
+  text-align: center;
+}
+.menuinfo h3 {
+  color: aqua;
+  font-size: 1.4rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.menuinfo .content a {
+  margin: 2rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #efc578;
+  letter-spacing: 0.1rem;
+}
+.menuinfo .content a:hover {
+  background-color: gray;
+  color: black;
+}
+
+@media (min-width: 768px) {
+
+  .pldmenu,
+  .ebsmenu,
+  .hrhmenu,
+  .drnksmenu,
+  .dsstmenu {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    display: none;
+  }
+  .sidebar i {
+    display: flex;
+  }
+  .nav-right a {
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    /* left: 29rem; */
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .stat-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat h3 {
+    font-size: 4rem;
+  }
+  .stat p {
+    font-size: 1rem;
+  }
+  .menu-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .menu-title h3 {
+    font-size: 3.3rem;
+  }
+  .menu-title h4 {
+    font-size: 1.2rem;
+  }
+  .space-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .space-title h2 {
+    font-size: 3rem;
+  }
+  .table .content h3 {
+    font-size: 3.3rem;
+  }
+  .footer-faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* THE SPACE SUBPAGE */
+  .atmosphere .content h2 {
+    font-size: 3.3rem;
+    color: lightskyblue;
+  }
+  .atmosphere .content p {
+    font-size: 1.5rem;
+  }
+  .dining .first-column h2 {
+    padding: 1rem 0rem;
+    font-size: 3rem;
+  }
+  .design-box img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .design-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .exclusive .content h2 {
+    font-size: 3.3rem;
+  }
+  .exclusive-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .journey-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .journey .content h2 {
+    font-size: 3.3rem;
+  }
+  .in-person h3 {
+    font-size: 2.4rem;
+  }
+  .members-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .members-title h2 {
+    font-size: 3rem;
+  }
+  .members-box img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .values-card {
+    display: flex;
+  }
+  .values-box.bnd {
+    padding: 1.5rem 2rem;
+  }
+  .choose .second-column h3 {
+    font-size: 1.9rem;
+  }
+  .choose .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .choose .second-column h4 {
+    line-height: 1.5;
+    padding: 0.8rem 0rem;
+  }
+  .bookings .content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 20px 120px;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .sidebar i {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 7rem;
+  }
+  .stat-card {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .essence .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-food {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .space-card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .chef .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .essence .first-column {
+    margin-top: 3rem;
+  }
+  .footer-faq {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .dining .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .bar .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .bar .second-column {
+    margin-top: 3rem;
+  }
+  .wine .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .wine .first-column {
+    margin-top: 3rem;
+  }
+  .welcome .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .choose .second-column h3 {
+    font-size: 3rem;
+  }
+  .bookings-form {
+    width: 35rem;
+  }
+  .menu-buttons .container {
+    display: flex;
+  }
+}
