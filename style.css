@@ -32,16 +32,11 @@ img {
   position: fixed;
 }
 
-.phn {
-  /* width: 12rem;
-  height: 5rem; */
-}
-.dsk {
-  width: 9rem;
-  height: 10rem;
-}
 .dekt {
   display: none;
+}
+.mble {
+  display: flex;
 }
 
 .mobile-menu .reserve {
@@ -206,7 +201,7 @@ img {
 .essence .first-column h3 {
   color: white;
   font-size: 2rem;
-   font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
   padding: 0.5rem 0rem;
 }
 .essence .first-column h4 {
