@@ -36,7 +36,7 @@ img {
   display: none;
 }
 .mble {
-  display: flex;
+  display: block;
 }
 
 .mobile-menu .reserve {
