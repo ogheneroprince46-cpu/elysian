@@ -31,13 +31,6 @@ buttons.forEach((button) => {
   });
 });
 
-// const sidebarToggle = document.getElementById("sidebar-toggle");
-// const mobileMenu = document.getElementById("mobile-menu");
-
-// sidebarToggle.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("active");
-// });
-
 const sidebarToggle = document.getElementById("sidebar-toggle");
 const closeToggle = document.getElementById("close-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
